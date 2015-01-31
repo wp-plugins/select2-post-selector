@@ -35,7 +35,7 @@ e.g.
 
 1. Upload `select2-post-selector.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Add code as explained in the Configuration tab
+1. Add code as explained in the Other Notes tab
 
 == Configuration ==
 
