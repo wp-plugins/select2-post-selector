@@ -123,10 +123,16 @@ I'm really sorry but I am unable to provide support on a per-project basis for t
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed bug with saving empty lists
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Fixed bug with saving empty lists
 
 = 1.0 =
 Initial release

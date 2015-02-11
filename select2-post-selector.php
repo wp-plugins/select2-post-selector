@@ -3,14 +3,14 @@
 /**
  *
  * @link              http://oikos.org.uk/
- * @since             1.0.0
+ * @since             1.0.1
  * @package           Select2_Post_Selector
  *
  * @wordpress-plugin
  * Plugin Name:       Select2 Post Selector
  * Plugin URI:        http://oikos.org.uk/select2-post-selector
  * Description:       Provides developers with a simple means of creating AJAX-powered Select 2 Post Select Meta Boxes
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Ross Wintle/Oikos
  * Author URI:        http://oikos.org.uk/
  * License:           GPL-2.0+
@@ -102,6 +102,12 @@ class S2PS_Post_Select_Instance {
 	        // Make sure that it is set.
 	        if ( ! isset( $_POST[$this->form_field_name] ) ) {
 	            return;
+	        }
+
+	        // If it's set but empty, the lists may have been deleted, so we need to delete existing meta values
+	        if ( empty( $_POST[$this->form_field_name] ) ) {
+	        	delete_post_meta($post->ID, $this->meta_key);
+				return;	        	
 	        }
 
 	        // The Select2 with multiple option submits a comma-separated list of vaules
