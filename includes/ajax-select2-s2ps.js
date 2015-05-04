@@ -43,8 +43,8 @@ function s2psProcessPostSelectDataForSelect2( ajaxData, page, query ) {
 
 	for (var thisId in ajaxData) {
 		newItem = {
-			'id': thisId,
-			'text': ajaxData[thisId]
+			'id': ajaxData[thisId]['id'],
+			'text': ajaxData[thisId]['title']
 		};
 		items.push(newItem);
 	}
