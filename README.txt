@@ -2,7 +2,7 @@
 Contributors: magicroundabout
 Tags: posts, custom-post-types, select2, relationships
 Requires at least: 4.0
-Tested up to: 4.1
+Tested up to: 4.2.1
 Stable tag: trunk
 License: GPLv2 or later (Select2 is MIT licensed)
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -123,6 +123,10 @@ I'm really sorry but I am unable to provide support on a per-project basis for t
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed bug where AJAX results were unexpectedly being sorted by the browser. Who knew? You did? Oh, OK.
+* Tested on WordPress v4.2 and v4.2.1
+
 = 1.0.1 =
 * Fixed bug with saving empty lists
 
@@ -130,6 +134,10 @@ I'm really sorry but I am unable to provide support on a per-project basis for t
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Fixed bug where AJAX results were unexpectedly being sorted by the browser. Who knew? You did? Oh, OK.
+* Tested on WordPress v4.2 and v4.2.1
 
 = 1.0.1 =
 * Fixed bug with saving empty lists
